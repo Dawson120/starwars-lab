@@ -1,24 +1,22 @@
-import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 
 import NavBar from './components/NavBar/NavBar'
-import StartshipList from './pages/StarshipList/StarshipList'
+import StarshipList from './pages/StarshipList/StarshipList'
+import StarshipDetails from './pages/StarshipDetails/StarshipDetails'
 
-// import
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <NavBar />
       <Routes>
-        <Route path='/starships' element={<StartshipList />}/>
+        <Route path='/starships' element={<StarshipList />} />
+        <Route path='/starships/:id' element={<StarshipDetails />} />
       </Routes>
-
     </>
-  )
+  );
 }
 
 export default App

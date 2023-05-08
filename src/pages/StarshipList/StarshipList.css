@@ -1,0 +1,22 @@
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.link-div {
+  margin: 15px;
+}
+
+.starshiplink {
+  padding: 6px;
+  border: 5px solid black;
+  color: black;
+  background-color: white;
+}
+
+.link-div :hover {
+  border: 5px solid white;
+  color: white;
+  background-color: black;
+}
